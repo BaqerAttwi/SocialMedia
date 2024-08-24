@@ -1,0 +1,121 @@
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%; /* Ensure container takes full width */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
+  *{margin: 0%;
+  padding: 0%;}
+  
+  .post {
+    
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-sizing: border-box;
+  }
+  
+  .post-description {
+    max-height: 100px; /* Limit height */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    white-space: nowrap; /* Prevent text wrap */
+    margin-bottom: 10px;
+    transition: max-height 0.3s ease;
+  }
+  
+  .post-description.expanded {
+    max-height: none; /* Remove height limit when expanded */
+    white-space: normal; /* Allow text to wrap */
+  }
+  
+  .read-more-button {
+    background-color: transparent;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  
+  .post-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .post-likes {
+    margin-bottom: 10px;
+  }
+  
+  .comments-toggle-button {
+    margin-bottom: 10px;
+  }
+  
+  .comments-section {
+    margin-top: 10px;
+  }
+  
+  .comment {
+    border-top: 1px solid #ddd;
+    padding-top: 5px;
+    margin-top: 5px;
+  }
+  
+  @media (min-width: 768px) {
+    .posts-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .post {
+      width: calc(50% - 20px);
+      margin: 10px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .posts-container {width: 90vw;}
+    .post {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .post-description {
+      white-space: normal; /* Allow text to wrap for better readability */
+    }
+  
+    .post h2 {
+      font-size: 18px;
+    }
+  
+    .post-description {
+      font-size: 14px;
+    }
+  
+    .post-likes, .comments-toggle-button {
+      font-size: 12px;
+    }
+  
+    .post {
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  
+    .post-description {
+      margin-bottom: 5px;
+    }
+  
+    .post-likes, .comments-toggle-button {
+      margin-bottom: 5px;
+    }
+  }
+  
+  

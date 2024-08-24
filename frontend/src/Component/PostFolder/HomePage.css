@@ -1,0 +1,164 @@
+.Global-container {
+  padding: 20px;
+}
+
+h2 {
+  padding-top: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.likecomment{
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;}
+  .Align-p-n-a{
+    display: flex;
+    flex-direction: row;
+    
+  }
+.post-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  list-style-type: none;
+  padding: 3rem;
+}
+
+.search-out {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 2rem;
+}
+
+.Seach {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 80%;
+  max-width: 500px;
+  margin-bottom: 10px;
+}
+
+.search-results {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+}
+
+.TextSeacrh {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.alignitemssearch {
+  display: flex;
+  align-items: center;
+}
+
+.Search-profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post-item {
+  box-shadow: 5px 5px rgba(139, 146, 227, 0.4), 10px 10px rgba(106, 153, 227, 0.3), 15px 15px rgba(38, 113, 194, 0.2), 20px 20px rgba(67, 35, 208, 0.1), 25px 25px rgba(9, 79, 192, 0.05);
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.post-item:hover {
+  transform: scale(1.05);
+}
+
+.post-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.username-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.post-username {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.add-friend-icon {
+  height: 20px;
+  width: 20px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.post-description {
+  padding: 0 10px 10px;
+}
+
+.post-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.read-more-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.read-more-button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+  .post-list {
+    padding: 2rem;
+  }
+
+  .post-item {
+    width: 100%;
+  }
+
+  .button-46 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Seach {
+    width: 90%;
+  }
+
+  .search-results {
+    width: 90%;
+  }
+
+  .post-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}

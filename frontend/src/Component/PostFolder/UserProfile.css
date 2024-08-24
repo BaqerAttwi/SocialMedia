@@ -1,0 +1,101 @@
+.UserProfile-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .user-details {
+    margin-bottom: 20px;
+  }
+  
+  .post-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  .post-description{
+    width: 40vw;
+  }
+  
+  .post-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .post-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .post-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-height: 2.4em; /* Adjust based on your needs */
+    transition: max-height 0.3s ease;
+  }
+  
+  .post-description.expanded {
+    white-space: normal;
+    max-height: none;
+  }
+  
+  .read-more-button {
+    background: none;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: underline;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .UserProfile-container {
+      padding: 10px;
+    }
+  
+    .post-item {
+      padding: 8px;
+    }
+  
+    .post-description {
+      font-size: 14px;
+      max-height: 3.6em; /* Adjust based on your needs */
+    }
+  
+    .read-more-button {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .UserProfile-container {
+      padding: 5px;
+    }
+  
+    .post-item {
+      padding: 5px;
+    }
+  
+    .post-description {
+      font-size: 12px;
+      max-height: 4.8em; /* Adjust based on your needs */
+    }
+  
+    .read-more-button {
+      font-size: 12px;
+    }
+  }
+  

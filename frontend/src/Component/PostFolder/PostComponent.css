@@ -1,0 +1,29 @@
+.input-container {
+    position: relative;
+  }
+  
+  .input-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .input-container input[type="file"] {
+    margin-bottom: 10px;
+  }
+  
+  .input-effect {
+    font-size: 0.8em;
+    color: #888;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .image-preview {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  

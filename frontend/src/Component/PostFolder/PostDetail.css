@@ -1,0 +1,157 @@
+*{margin: 0%;
+padding: 0%;}
+.post-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+/* Add these styles to your PostDetail.css */
+
+.Text-d {
+  width: 80vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-height: 3.6em; /* Set maximum height for 3 lines */
+  position: relative;
+  transition: max-height 0.3s ease, white-space 0.3s ease;
+}
+
+.Text-d.expanded {
+  white-space: normal;
+  max-height: none; /* Allow full height */
+}
+
+.read-more-button {
+  background: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  font-size: 14px;
+}
+
+.post-content {
+  position: relative;
+}
+
+.read-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.post-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.post-detail-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.like-count,
+.comment-count {
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.comment-container {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 2rem;
+}
+
+.comment-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.comment-item {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.add-comment-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.add-comment-container textarea {
+  flex-grow: 1;
+  resize: vertical;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+@media (min-width: 768px) {
+  .post-header {
+    grid-column: span 6;
+  }
+
+  .post-content {
+    grid-column: span 6;
+  }
+
+  .post-actions {
+    grid-column: span 6;
+    align-items: start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .post-header {
+    grid-column: span 4;
+  }
+
+  .post-content {
+    grid-column: span 8;
+  }
+
+  .post-actions {
+    grid-column: span 4;
+  }
+}
